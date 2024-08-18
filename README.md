@@ -28,6 +28,9 @@ The telecom company’s system generates CSV files every 5 minutes, which contai
 3. **Data Transformation**: The data is transformed to match the database schema requirements.
 4. **Data Loading**: Valid records are inserted into the main database table, while rejected records are stored in a separate table along with the original CSV filename.
 
+![Data Flow](https://github.com/abdelrahmanfaheem/Telecom-DWH-Using-SSIS/blob/main/Data%20Flow.png)
+![Pipeline](https://github.com/abdelrahmanfaheem/Telecom-DWH-Using-SSIS/blob/main/PipLine.png)
+
 ## Data Schema
 
 | Column Name | Data Type | Length | Is Nullable | Sample Data         |
@@ -48,6 +51,10 @@ During the data loading process, additional metrics are captured to ensure data 
 - **Successful Records**: The number of records successfully stored in the database.
 - **Rejected Records**: The number of records rejected due to validation errors.
 - **File Tracking**: Each stored record is linked to its original CSV file for traceability.
+
+![Data Quality Check 1](https://github.com/abdelrahmanfaheem/Telecom-DWH-Using-SSIS/blob/main/Data%20Quilty%20Check%201.png)
+![Data Quality Check 2](https://github.com/abdelrahmanfaheem/Telecom-DWH-Using-SSIS/blob/main/Data%20Quilty%20Check%202.png)
+![Variables](https://github.com/abdelrahmanfaheem/Telecom-DWH-Using-SSIS/blob/main/variables.png)
 
 ## File Archiving Process
 
